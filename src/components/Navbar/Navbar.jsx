@@ -6,7 +6,7 @@ const Header = () => {
   return (
       <Navbar className="w-full justify-between text-secondary">
         <NavbarBrand className="text-primary">
-          <p className="font-bold text-2xl px-8 text-slate-300">Bruno Celia</p>
+          <p className="font-semibold text-2xl px-8 text-slate-300">Bruno Celia</p>
         </NavbarBrand>
         <NavbarContent justify="end">
 {/*           <NavbarItem>

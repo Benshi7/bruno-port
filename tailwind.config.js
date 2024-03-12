@@ -25,7 +25,8 @@ export default {
     fontFamily: {
       sans: ['Inter var', 'Inter', 'sans-serif'],
       serif: ['Georgia', 'serif'],
-      mono: ['Menlo', 'monospace']
+      mono: ['Menlo', 'monospace'],
+      nunito: ['Nunito Variable', 'Nunito']
     },
     extend: {
       colors: {
@@ -62,10 +63,16 @@ export default {
       animation: {
         'meteor-effect': 'meteor 5s linear infinite',
         spotlight: 'spotlight 2s ease .75s 1 forwards',
-        scroll: 'scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite'
+        scroll: 'scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite',
+        'fade-in': 'fadeIn 1.6s ease-in'
       },
       keyframes: {
-
+        fadeIn: {
+          '0%': { opacity: 0 },
+          '30%': { opacity: 0 },
+          '70%': { opacity: 0.6 },
+          '100%': { opacity: 1 }
+        },
         meteor: {
           '0%': { transform: 'rotate(215deg) translateX(0)', opacity: 1 },
           '70%': { opacity: 1 },

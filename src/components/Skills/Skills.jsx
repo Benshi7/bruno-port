@@ -1,22 +1,14 @@
 import React from 'react'
 import { InfiniteMovingCards } from '../../ui/infinite-moving-cards'
-
-const SkillCard = ({ title, imageUrl }) => {
-  return (
-    <div className="flex items-center mb-4">
-      <div className="w-32 h-32 mr-4">
-        <img src={imageUrl} alt={title} className="w-full h-full object-cover rounded-full" />
-      </div>
-      <h3 className="text-lg font-semibold">{title}</h3>
-    </div>
-  )
-}
+import { Card, Image, CardFooter, Button } from '@nextui-org/react'
+import CardComponent from './CardComponent'
+import Reveal from '../../ui/Reveal'
 
 const Skills = () => {
   const tecnologias = [
     {
       title: 'React',
-      imageUrl: 'https://i.imgur.com/fvSjfcr.png'
+      imageUrl: 'https://i.imgur.com/1MumQjN.png'
     },
     {
       title: 'JavaScript',
@@ -44,39 +36,61 @@ const Skills = () => {
     }
   ]
 
+  const projects = [
+    {
+      title: 'Noesflix',
+      description: 'Mi primer aplicación React. Custom Hooks, uso de useEffect, useState, y fetch a API. ',
+      url: 'https://noesflix.netlify.app/',
+      github: 'http://www.google.com',
+      alt: 'Captura de Noesflix',
+      src: 'https://i.imgur.com/CeNN0DU.jpeg',
+      disponible: true
+    },
+    {
+      title: 'TwinBank',
+      description: 'Proyecto final en ITBA FS. Homebanking utilizando NextJS, Django Rest Framework, y SQL.',
+      url: '',
+      github: '',
+      alt: 'Captura de TwinBank',
+      src: 'https://i.imgur.com/O3vhije.jpeg',
+      disponible: false
+    }
+
+  ]
+
   return (
-    <div className="flex -mt-32">
+    <div className="flex">
       <div className="w-1/2 p-4">
-        <div className="shadow-md rounded-md p-4">
-          <h2 className="text-xl font-semibold mb-4 text-left">ITBank</h2>
-          <div className="flex items-center">
-            <h3 className="text-lg font-semibold mr-4">En este proyecto hice diversas cosas como</h3>
-            <img src="https://i.imgur.com/AOTKD3s.png" alt="Imagen" className="ml-auto" />
-          </div>
-        </div>
-        <div className="shadow-md rounded-md p-4">
-          <h2 className="text-xl font-semibold mb-4 text-left">Título de la Tarjeta</h2>
-          <div className="flex items-center">
-            <h3 className="text-lg font-semibold mr-4">Título</h3>
-            <img src="https://i.imgur.com/AOTKD3s.png" alt="Imagen" className="ml-auto" />
-          </div>
-        </div>
-
+        <Reveal movementY={250} movementX={0}>
+          {projects.map((project) => (
+            <CardComponent
+              title= {project.title}
+              description={project.description}
+              url={project.url}
+              github={project.github}
+              alt={project.alt}
+              src={project.src}
+              disponible={project.disponible}
+              key={project.title}
+              />
+          )) }
+        </Reveal>
       </div>
-
-      <div className="w-1/2 p-4 py-60">
-        <div className="shadow-md rounded-md p-4">
-          <h2 className="text-6xl text-left text-slate-200 font-semibold mb-4">SKILLS</h2>
+      <div className="w-1/2 p-4 py-80 text-left">
+        <div className="h-[rem] rounded-md flex flex-col antialiaseddark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
+          <Reveal movementY={0} movementX={-150}>
+          <h2 className="text-7xl text-left text-slate-200 font-semibold mt-12 mr-[40rem]">SKILLS</h2>
+          </Reveal>
         </div>
-        <div className="h-[10rem] rounded-md flex flex-col antialiaseddark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
+          <Reveal movementY={100} movementX={0}>
               <InfiniteMovingCards
                 items={tecnologias}
                 direction="right"
                 speed="slow"
               />
-    </div>
-
+          </Reveal>
       </div>
+
     </div>
   )
 }
