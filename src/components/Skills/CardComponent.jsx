@@ -5,13 +5,20 @@ import React from 'react'
 const CardComponent = ({ title, description, url, github, alt, src, disponible = false }) => {
   return (
     <div className="shadow-md rounded-md p-4">
-    <h2 className="text-xl font-semibold mb-4 text-right text-slate-200">{title}</h2>
+    <h2 className="text-2xl font-semibold mb-4 text-right text-slate-200">{title}</h2>
     <div className="flex items-center pl-80">
       <div className='w-1/2'>
       <p className="text-sm font-light mr-4 text-balance">{description}</p>
-      <a target='blank' href={url} className='hover:text-red-800 transition-colors'>{url}</a>
-      <br />
+      <div>
+      { url !== ''
+        ? (<>
+          <a target='blank' href={url} className={`${disponible === false ? null : 'hover:text-red-800 transition-colors'}`}>{url || 'Sitio no disponible'}</a>
+          <br />
+        </>)
+        : null
+      }
       <a target='blank' href={github} className='hover:text-red-800 transition-colors'>Github</a>
+      </div>
       </div>
       <Card
         isPressable

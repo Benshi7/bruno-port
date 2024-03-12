@@ -1,4 +1,5 @@
 import React from 'react'
+import Reveal from '../../ui/Reveal'
 
 const BrandImage = ({ src, alt, link, className }) => (
   <a href={link} target='blank' >
@@ -29,6 +30,7 @@ const Footer = () => {
 
   return (
     <div className="flex flex-col items-center px-16 pt-10 pb-10max-md:px-5"> {/*  bg-zinc-900  */}
+    <Reveal movementY={80} movementX={0}>
       <div className="flex flex-col max-w-full w-[274px]">
         <div className="flex gap-4 justify-center items-start">
           {brandImages.map((img, index) => (
@@ -37,6 +39,7 @@ const Footer = () => {
         </div>
         <FooterText />
       </div>
+      </Reveal>
     </div>
   )
 }
