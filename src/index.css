@@ -1,0 +1,16 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+
+html {
+  background-color: #121212 !important;
+}
+
+body {
+  background-color: #121212;
+}
+
+:root {
+  color-scheme: dark;
+}
