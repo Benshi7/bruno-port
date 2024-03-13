@@ -2,6 +2,7 @@ import React from 'react'
 import { Card, Image, CardFooter, Button } from '@nextui-org/react'
 import PropTypes from 'prop-types'
 import { MingcuteLinkFill } from './LinkSvg'
+import { MdiGithub } from './GithubIcon'
 
 const CardComponent = ({ title, description, url, github, alt, src, disponible = false }) => {
   return (
@@ -13,12 +14,14 @@ const CardComponent = ({ title, description, url, github, alt, src, disponible =
         <div>
         { url !== ''
           ? (<>
-            <a target='blank' href={url} className={`${disponible === false ? null : 'hover:text-red-800 transition-colors'}`}>{url || 'Sitio no disponible'}</a>
+            <a target='blank' href={url} className={`${disponible === false ? null : 'hover:text-red-800 transition-colors'} hidden xl:visible hover:scale-105 transition-all`}>{url || 'Sitio no disponible'}</a>
+            <a target='blank' href={url} className='visible xl:hidden hover:scale-105 transition-all'><MingcuteLinkFill className='w-10 h-10 ml-12' /></a>
             <br />
           </>)
-          : null
+          : <a target='blank' className='visible xl:hidden'><MingcuteLinkFill className='w-10 h-10 ml-12 opacity-[0.15]' /></a>
         }
-        <a target='blank' href={github} className='hover:text-red-800 transition-colors'>Github</a>
+        <a target='blank' href={github} className='hover:text-red-800 hidden xl:visible hover:scale-105 transition-all'>Github</a>
+        <a target='blank' href={github} className='hover:text-red-800 text-right pl-24 transition-all visible xl:hidden text-white '><MdiGithub className='w-10 h-10 ml-12 hover:scale-105 transition-all' color='white'/></a>
         </div>
         </div>
         <Card

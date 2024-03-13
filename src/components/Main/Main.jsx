@@ -23,7 +23,7 @@ function Main () {
             <Reveal movement={75}>
               <Button
                 className="flex justify-center items-center p-5 text-2xl font-extralight tracking-normal leading-5 text-slate-950 whitespace-nowrap
-                  rounded-lg border border-solid bg-white bg-opacity-70 border-neutral-900 mt-24 mr-2 ">
+                  rounded-lg border border-solid bg-white bg-opacity-70 border-neutral-900 mb-24 mr-2 xl:mt-24">
                           <a href='https://drive.google.com/file/d/1JAHLqbkLbl1NoTtGYaUjAsFes4Ihked9/view?usp=sharing' target='blank' >
                             curriculum
                             </a>

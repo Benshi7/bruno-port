@@ -15,7 +15,7 @@ const Services = () => {
     </div>
     <br />
       <Reveal movementY={0} movementX={-240} duration={0.9}>
-          <h2 className="text-7xl text-slate-200 font-semibold mt-12 text-left">PROJECTS</h2>
+          <h2 className="text-5xl text-slate-200 font-semibold mt-12 text-left xl:text-7xl">PROJECTS</h2>
           </Reveal>
     </div>
   )
