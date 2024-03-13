@@ -5,6 +5,7 @@ import Skills from './Skills/Skills'
 import Services from './Services/Services'
 import Contact from './Contact/Contact' */
 import '../utils/grained.js'
+import Services from './Services/Services.jsx'
 
 export default function Home () {
   const skills = [

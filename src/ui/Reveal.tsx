@@ -6,9 +6,10 @@ interface Props {
   width?: 'fit-content' | '100%'
   movementY: number
   movementX: number
+  duration: number
 }
 
-const Reveal = ({ children, movementY, movementX}: Props) => {
+const Reveal = ({ children, movementY, movementX, duration = 0.5}: Props) => {
   const ref = useRef(null)
   const isInView = useInView(ref, { once:true })
 
@@ -32,7 +33,7 @@ const Reveal = ({ children, movementY, movementX}: Props) => {
         }}
         initial='hidden'
         animate={mainControls}
-        transition={{ duration: 0.5, delay: 0.35}}>
+        transition={{ duration: duration, delay: 0.35}}>
         {children}
       </motion.div>
 

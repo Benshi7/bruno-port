@@ -4,7 +4,7 @@ import React from 'react'
 
 const CardComponent = ({ title, description, url, github, alt, src, disponible = false }) => {
   return (
-    <div className="shadow-md rounded-md p-4">
+    <div className="rounded-md p-4">
     <h2 className="text-2xl font-semibold mb-4 text-right text-slate-200">{title}</h2>
     <div className="flex items-center pl-80">
       <div className='w-1/2'>
@@ -56,6 +56,7 @@ CardComponent.propTypes = {
   url: PropTypes.string.isRequired,
   alt: PropTypes.string.isRequired,
   src: PropTypes.string.isRequired,
+  github: PropTypes.string.isRequired,
   disponible: PropTypes.bool
 }
 

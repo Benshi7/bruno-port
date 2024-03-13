@@ -7,7 +7,7 @@ function Main () {
     <>
     <div className='relative h-screen'>
     <div
-        className="absolute mb-60 inset-0 bg-cover bg-center animate-fade-in"
+        className="absolute mb-20 inset-0 bg-cover bg-center animate-fade-in"
         style={{
           backgroundImage: 'url(https://i.imgur.com/30FUpBt.png)',
           mixBlendMode: 'lighten' // Establece la capa de fusión aclarar
@@ -21,7 +21,13 @@ function Main () {
         <section className="w-full max-md:max-w-full">
           <div className="flex items-center justify-center py-40 max-md:flex-col max-md:gap-0">
             <Reveal movement={75}>
-            <Button className="flex justify-center items-center p-5 text-2xl font-extralight tracking-normal leading-5 text-slate-950 whitespace-nowrap rounded-lg border border-solid bg-white bg-opacity-70 border-neutral-900">curriculum</Button>
+              <Button
+                className="flex justify-center items-center p-5 text-2xl font-extralight tracking-normal leading-5 text-slate-950 whitespace-nowrap
+                  rounded-lg border border-solid bg-white bg-opacity-70 border-neutral-900">
+                          <a href='https://drive.google.com/file/d/1JAHLqbkLbl1NoTtGYaUjAsFes4Ihked9/view?usp=sharing' target='blank' >
+                            curriculum
+                            </a>
+              </Button>
             </Reveal>
           </div>
         </section>

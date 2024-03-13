@@ -1,6 +1,7 @@
 import React from 'react'
 import Reveal from '../../ui/Reveal'
 
+// eslint-disable-next-line react/prop-types
 const BrandImage = ({ src, alt, link, className }) => (
   <a href={link} target='blank' >
     <img loading="lazy" src={src} alt={alt} className={className} />
@@ -29,10 +30,10 @@ const Footer = () => {
   ]
 
   return (
-    <div className="flex flex-col items-center px-16 pt-10 pb-10max-md:px-5"> {/*  bg-zinc-900  */}
-    <Reveal movementY={80} movementX={0}>
+    <div className="flex flex-col items-center px-16 pt-16 max-md:px-5"> {/*  bg-zinc-900  */}
+    <Reveal movementY={40} movementX={0} duration={0.4}>
       <div className="flex flex-col max-w-full w-[274px]">
-        <div className="flex gap-4 justify-center items-start">
+        <div className="flex gap-4 justify-center items-start pt-4">
           {brandImages.map((img, index) => (
             <BrandImage key={index} src={img.src} alt={img.alt} link={img.link} className={img.className} />
           ))}
