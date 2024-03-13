@@ -8,10 +8,10 @@ import Reveal from '../../ui/Reveal'
 const Services = () => {
   return (
     <div>
-    <div className='flex justify-center items-center opacity-80 gap-12'>
-      <Tooltip showArrow='true' delay={10} closeDelay={50} color='foreground' content='Web Development'><img src={WebDev} alt="Web Dev" /></Tooltip>
-      <Tooltip showArrow='true' delay={10} closeDelay={50} color='foreground' content='Design'><img src={Design} alt="Design" /></Tooltip>
-      <Tooltip showArrow='true' delay={10} closeDelay={50} color='foreground' content='Databases'><img src={Database} alt="Database" /></Tooltip>
+    <div className='flex justify-center items-center opacity-80 gap-6 xl:gap-12'>
+      <Tooltip showArrow='true' delay={10} closeDelay={50} color='foreground' content='Web Development'><img src={WebDev} alt="Web Dev" className='w-16 h-16 md:w-20 md:h-20'/></Tooltip>
+      <Tooltip showArrow='true' delay={10} closeDelay={50} color='foreground' content='Design'><img src={Design} alt="Design" className='w-16 h-16 md:w-20 md:h-20'/></Tooltip>
+      <Tooltip showArrow='true' delay={10} closeDelay={50} color='foreground' content='Databases'><img src={Database} alt="Database" className='w-16 h-16 md:w-20 md:h-20'/></Tooltip>
     </div>
     <br />
       <Reveal movementY={0} movementX={-240} duration={0.9}>

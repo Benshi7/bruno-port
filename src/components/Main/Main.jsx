@@ -15,14 +15,14 @@ function Main () {
       />
       <main className="flex flex-col xl:px-80 px-16 py-10 max-md:px-5 md:py-2 sm:px-20">
         <header className="text-4xl font-bold tracking-wide leading-5 text-violet-100 max-md:mr-2 max-md:max-w-full">
-          <h1 className="text-left text-red-500 sm:text-4xl md:text-[4.25rem] xl:[text-[5.25rem] leading-none fade-in">PORTFOLIO</h1>
+          <h1 className="text-left text-red-500 text-5xl sm:text-6xl md:text-[4.25rem] xl:[text-[5.25rem] leading-none fade-in">PORTFOLIO</h1>
           <h2 className='text-left text-xl md:text-3xl text-slate-300 mt-[-0.6rem] lg:ml-[0.2rem] md:mt-[0.4rem] xl:mr-[1rem]'>Full-Stack Developer</h2>
         </header>
         <section className="w-full max-md:max-w-full">
-          <div className="flex items-center justify-center py-40 max-md:flex-col max-md:gap-0">
+          <div className="flex items-center justify-center py-20 xl:py-40 max-md:flex-col max-md:gap-0">
             <Reveal movement={75}>
               <Button
-                className="flex justify-center items-center p-5 text-2xl font-extralight tracking-normal leading-5 text-slate-950 whitespace-nowrap
+                className="flex justify-center items-center p-2 md:p-5 text-xl md:text-2xl font-extralight tracking-normal leading-5 text-slate-950 whitespace-nowrap
                   rounded-lg border border-solid bg-white bg-opacity-70 border-neutral-900 mb-24 mr-2 xl:mt-24">
                           <a href='https://drive.google.com/file/d/1JAHLqbkLbl1NoTtGYaUjAsFes4Ihked9/view?usp=sharing' target='blank' >
                             curriculum
