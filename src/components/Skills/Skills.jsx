@@ -5,12 +5,13 @@ import Reveal from '../../ui/Reveal'
 import Services from '../Services/Services'
 import { projects, tecnologias } from './consts'
 import { BottomLine } from './BottomLine'
+import Sphere from '../Sphere'
 
 const Skills = () => {
   return (
     <div className="flex">
       <div className="w-1/2 pb-50 p-4">
-      <div className='py-36 pb-16'>
+      <div className='py-36 pb-8'>
         <Reveal movementY={70}>
           <Services/>
         </Reveal>
@@ -44,7 +45,9 @@ const Skills = () => {
               />
           <BottomLine />
           </Reveal>
+          <Sphere />
       </div>
+
     </div>
   )
 }

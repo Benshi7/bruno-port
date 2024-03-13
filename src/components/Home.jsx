@@ -2,7 +2,6 @@ import React from 'react'
 import Main from './Main/Main'
 import Skills from './Skills/Skills'
 import '../utils/grained.js'
-import Noise from '../utils/Noise.jsx'
 
 export default function Home () {
   const skills = [
@@ -24,6 +23,7 @@ export default function Home () {
       <div>
         <Main />
         <Skills tecnologias={skills}/>
+
       </div>
     </>
   )

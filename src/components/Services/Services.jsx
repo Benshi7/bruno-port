@@ -14,8 +14,8 @@ const Services = () => {
       <Tooltip showArrow='true' delay={10} closeDelay={50} color='foreground' content='Databases'><img src={Database} alt="Database" /></Tooltip>
     </div>
     <br />
-      <Reveal movementY={0} movementX={-150} duration={0.6}>
-          <h2 className="text-7xl text-left text-slate-200 font-semibold mt-12 mr-[40rem]">PROJECTS</h2>
+      <Reveal movementY={0} movementX={-240} duration={0.9}>
+          <h2 className="text-7xl text-slate-200 font-semibold mt-12 text-left">PROJECTS</h2>
           </Reveal>
     </div>
   )

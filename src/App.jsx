@@ -15,7 +15,7 @@ function App () {
     <div style={{
       fontFamily: 'Metropolis'
     }}>
-              <Noise />
+       <Noise />
       <Router>
         <Header />
         <Routes>

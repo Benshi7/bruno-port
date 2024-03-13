@@ -31,7 +31,7 @@ const Footer = () => {
 
   return (
     <div className="flex flex-col items-center px-16 pt-16 max-md:px-5"> {/*  bg-zinc-900  */}
-    <Reveal movementY={40} movementX={0} duration={0.4}>
+    <Reveal movementY={150} movementX={0} duration={0.5}>
       <div className="flex flex-col max-w-full w-[274px]">
         <div className="flex gap-4 justify-center items-start pt-4">
           {brandImages.map((img, index) => (
