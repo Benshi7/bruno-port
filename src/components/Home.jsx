@@ -1,11 +1,8 @@
 import React from 'react'
 import Main from './Main/Main'
 import Skills from './Skills/Skills'
-/* import Projects from './Projects/Projects'
-import Services from './Services/Services'
-import Contact from './Contact/Contact' */
 import '../utils/grained.js'
-import Services from './Services/Services.jsx'
+import Noise from '../utils/Noise.jsx'
 
 export default function Home () {
   const skills = [
@@ -24,9 +21,10 @@ export default function Home () {
   ]
   return (
     <>
-      <div id="grain"></div>
-      <Main />
+      <div>
+        <Main />
         <Skills tecnologias={skills}/>
+      </div>
     </>
   )
 }

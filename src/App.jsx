@@ -8,12 +8,14 @@ import '@fontsource-variable/nunito'
 import '@fontsource/ubuntu'
 import '../fonts.js'
 import './utils/grained.js'
+import Noise from './utils/Noise.jsx'
 
 function App () {
   return (
     <div style={{
       fontFamily: 'Metropolis'
     }}>
+              <Noise />
       <Router>
         <Header />
         <Routes>

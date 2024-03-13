@@ -19,13 +19,13 @@ const Footer = () => {
       src: 'https://i.imgur.com/orpz3Aq.png',
       alt: 'Brand Logo 1',
       className: 'self-stretch my-auto aspect-[1.02] fill-neutral-300 w-[50px]  hover:scale-110 transition-all',
-      link: 'http://www.github.com'
+      link: 'http://www.github.com/Benshi7'
     },
     {
       src: 'https://i.imgur.com/wV36Cyz.png',
       alt: 'Brand Logo 2',
       className: 'aspect-square w-[54px]  hover:scale-110 transition-all',
-      link: 'http://www.linkedin.com'
+      link: 'https://www.linkedin.com/in/bruno-celia-627b04227/'
     }
   ]
 

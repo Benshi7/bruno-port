@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom'
 
 const Header = () => {
   return (
-      <Navbar className="w-full justify-between text-secondary">
+      <Navbar className="w-full z-[20] justify-between text-secondary">
         <NavbarBrand className="text-primary">
           <p className="font-semibold text-2xl px-8 text-slate-300">Bruno Celia</p>
         </NavbarBrand>
