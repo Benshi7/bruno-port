@@ -1,13 +1,24 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Button } from '@nextui-org/react'
 import Reveal from '../../ui/Reveal'
+import ModalCV from './ModalCV'
 
 function Main () {
+  const [isModalOpen, setIsModalOpen] = useState(false)
+
+  const handleClick = () => {
+    setIsModalOpen(true)
+  }
+
+  const handleClose = () => {
+    setIsModalOpen(false)
+  }
+
   return (
     <>
-    <div className='relative h-screen'>
+    <div className='relative h-[40%] sm:h-[50%] md:h-[90%] lg:h-screen xl:h-screen'>
     <div
-        className="absolute mb-20 inset-0 bg-cover bg-center animate-fade-in"
+        className="absolute pt-[30rem] md:pt-[20rem] inset-0 bg-cover bg-center animate-fade-in aspect-auto"
         style={{
           backgroundImage: 'url(https://i.imgur.com/30FUpBt.png)',
           mixBlendMode: 'lighten' // Establece la capa de fusión aclarar
@@ -21,13 +32,14 @@ function Main () {
         <section className="w-full max-md:max-w-full">
           <div className="flex items-center justify-center py-20 xl:py-40 max-md:flex-col max-md:gap-0">
             <Reveal movement={75}>
-              <Button
+              <div>
+              <Button onClick={handleClick}
                 className="flex justify-center items-center p-2 md:p-5 text-xl md:text-2xl font-extralight tracking-normal leading-5 text-slate-950 whitespace-nowrap
-                  rounded-lg border border-solid bg-white bg-opacity-70 border-neutral-900 mb-24 mr-2 xl:mt-24">
-                          <a href='https://drive.google.com/file/d/1JAHLqbkLbl1NoTtGYaUjAsFes4Ihked9/view?usp=sharing' target='blank' >
-                            curriculum
-                            </a>
+                  rounded-lg border border-solid bg-white bg-opacity-70 border-neutral-900 mb-24 mr-2 md:mb-48 lg:mt-24">
+                          curriculum
               </Button>
+              <ModalCV isOpen={isModalOpen} onClose={handleClose} className='z-30'/>
+              </div>
             </Reveal>
           </div>
         </section>

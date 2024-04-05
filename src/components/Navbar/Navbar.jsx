@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <Navbar className='w-full z-[20] justify-between bg-background-100 text-secondary'>
       <NavbarBrand className="text-primary text-left">
-        <p className='text-2xl lg:px-6 xl:px-8 text-slate-300 font-light'>Bruno Celia</p>
+        <p className='text-lg md:text-xl lg:text-2xl lg:px-6 xl:px-8 text-slate-300 font-light'>Bruno Celia</p>
       </NavbarBrand>
       <NavbarContent justify="end">
         {/* <NavbarItem>

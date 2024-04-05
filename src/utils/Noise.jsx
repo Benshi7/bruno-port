@@ -2,7 +2,7 @@ import React from 'react'
 
 const Noise = () => {
   return (
-    <div id="noise" className={'-top-1/2 -left-1/2 -bottom-1/2 -right-1/2 fixed bg-repeat bg-transparent w-[200%] h-[200vh] z-[999999] point-eventers-none opacity-[0.13] brightness-80 contrast-125 '}>
+    <div id="noise" className={'-top-1/2 -left-1/2 -bottom-1/2 -right-1/2 fixed bg-repeat bg-transparent w-[200%] h-[200vh] z-[999999] point-eventers-none opacity-[0.144] brightness-100 contrast-125 '}>
           <style>
           {`
             #noise {

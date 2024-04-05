@@ -26,6 +26,10 @@ export const tecnologias = [
   {
     title: 'SQL',
     imageUrl: 'https://i.imgur.com/D6vz1gO.png'
+  },
+  {
+    title: 'Python',
+    imageUrl: 'https://i.imgur.com/CbUQjYj.png'
   }
 ]
 
@@ -41,11 +45,20 @@ export const projects = [
   },
   {
     title: 'TwinBank',
-    description: 'Proyecto final en ITBA FS. Homebanking utilizando NextJS, Django Rest Framework, y SQL.',
+    description: 'Proyecto final en ITBA FS. Homebanking ficticio con NextJS, Rest Framework, y SQL.',
     url: '',
     github: 'https://github.com/Benshi7/TwinBank',
     alt: 'Captura de TwinBank',
     src: 'https://i.imgur.com/O3vhije.jpeg',
     disponible: false
+  },
+  {
+    title: 'Fragmentz (wip 🚀)',
+    description: 'Landing page servicio venta de páginas. Utilicé React, Figma, TailwindCSS y NodeJS.',
+    url: 'https://fragmentz-prod-test.netlify.app/',
+    github: 'https://github.com/Benshi7/fragmentz',
+    alt: 'Captura de Fragmentz',
+    src: 'https://i.imgur.com/JWv7fbU.jpeg',
+    disponible: true
   }
 ]

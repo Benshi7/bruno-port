@@ -8,14 +8,14 @@ import Reveal from '../../ui/Reveal'
 const Services = () => {
   return (
     <div>
-    <div className='flex justify-center items-center opacity-80 gap-6 xl:gap-12'>
-      <Tooltip showArrow='true' delay={10} closeDelay={50} color='foreground' content='Web Development'><img src={WebDev} alt="Web Dev" className='w-16 h-16 md:w-20 md:h-20'/></Tooltip>
-      <Tooltip showArrow='true' delay={10} closeDelay={50} color='foreground' content='Design'><img src={Design} alt="Design" className='w-16 h-16 md:w-20 md:h-20'/></Tooltip>
-      <Tooltip showArrow='true' delay={10} closeDelay={50} color='foreground' content='Databases'><img src={Database} alt="Database" className='w-16 h-16 md:w-20 md:h-20'/></Tooltip>
+    <div className='flex justify-center items-center opacity-80 gap-6 xl:gap-12 md:pb-4 lg:pt-6'>
+      <Tooltip showArrow='true' delay={10} closeDelay={50} color='foreground' content='Web Development'><img src={WebDev} alt="Web Dev" className='h-14 w-1h-14 md:w-14 md:h-14 sm:w-12 sm:h-12 2xl:w-16 2xl:h-16'/></Tooltip>
+      <Tooltip showArrow='true' delay={10} closeDelay={50} color='foreground' content='Design'><img src={Design} alt="Design" className='h-14 w-14 md:w-14 md:h-14  sm:w-12 sm:h-12 2xl:w-16 2xl:h-16'/></Tooltip>
+      <Tooltip showArrow='true' delay={10} closeDelay={50} color='foreground' content='Databases'><img src={Database} alt="Database" className='h-14 w-14 md:w-14 md:h-14 sm:w-12 sm:h-12 2xl:w-16 2xl:h-16'/></Tooltip>
     </div>
     <br />
       <Reveal movementY={0} movementX={-240} duration={0.9}>
-          <h2 className="text-5xl text-slate-200 font-semibold mt-12 text-left xl:text-7xl">PROJECTS</h2>
+          <h2 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-slate-200 font-semibold mt-20 text-left ">PROJECTS</h2>
           </Reveal>
     </div>
   )
