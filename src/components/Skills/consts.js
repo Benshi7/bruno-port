@@ -36,7 +36,8 @@ export const tecnologias = [
 export const projects = [
   {
     title: 'Noesflix',
-    description: 'Mi primer aplicación React. Custom Hooks, uso de useEffect, useState, y fetch a API. ',
+    description:
+      'Mi primer aplicación React. Custom Hooks, uso de useEffect, useState, y fetch a API. ',
     url: 'https://noesflix.netlify.app/',
     github: 'https://github.com/Benshi7/noesflix',
     alt: 'Captura de Noesflix',
@@ -45,7 +46,8 @@ export const projects = [
   },
   {
     title: 'TwinBank',
-    description: 'Proyecto final en ITBA FS. Homebanking ficticio con NextJS, Rest Framework, y SQL.',
+    description:
+      'Proyecto final en ITBA FS. Homebanking ficticio con NextJS, Rest Framework, y SQL.',
     url: '',
     github: 'https://github.com/Benshi7/TwinBank',
     alt: 'Captura de TwinBank',
@@ -54,7 +56,8 @@ export const projects = [
   },
   {
     title: 'Fragmentz (wip 🚀)',
-    description: 'Landing page servicio venta de páginas. Utilicé React, Figma, TailwindCSS y NodeJS.',
+    description:
+      'Landing page servicio venta de páginas. Utilicé React, Figma, TailwindCSS y NodeJS.',
     url: 'https://fragmentz-prod-test.netlify.app/',
     github: 'https://github.com/Benshi7/fragmentz',
     alt: 'Captura de Fragmentz',
