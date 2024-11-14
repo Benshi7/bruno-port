@@ -20,7 +20,7 @@ function Main () {
         <div
           className='absolute pt-[30rem] md:pt-[20rem] inset-0 bg-cover bg-center animate-fade-in aspect-auto'
           style={{
-            backgroundImage: 'url(https://i.ibb.co/VpN4Dwh/hands2.webp)',
+            backgroundImage: 'url(/hands2.webp)',
             mixBlendMode: 'lighten' // Establece la capa de fusión aclarar
           }}
         />

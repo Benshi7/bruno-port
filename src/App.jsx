@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './App.css'
 import Header from './components/Navbar/Navbar'
 import Footer from './components/Footer/Footer'
@@ -11,15 +11,26 @@ import './utils/grained.js'
 import Noise from './utils/Noise.jsx'
 
 function App () {
+  const [fontLoaded, setFontLoaded] = useState(false)
+
+  useEffect(() => {
+    document.fonts.load('1rem "NombreDeLaFuente"').then(() => {
+      setFontLoaded(true)
+    })
+  }, [])
+
+  if (!fontLoaded) return null
   return (
-    <div style={{
-      fontFamily: 'Metropolis'
-    }}>
-       <Noise />
+    <div
+      style={{
+        fontFamily: 'Metropolis'
+      }}
+    >
+      <Noise />
       <Router>
         <Header />
         <Routes>
-          <Route path="/" exact Component={Home}/>
+          <Route path='/' exact Component={Home} />
         </Routes>
         <Footer />
       </Router>

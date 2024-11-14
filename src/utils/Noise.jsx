@@ -10,47 +10,48 @@ const Noise = () => {
     >
       <style>
         {`
-            #noise {
-              background-image: url('https://i.ibb.co/BTGwWbN/bg.webp');
-              animation: noise 0.3s infinite;
-
-              pointer-events: none;}
-            h1 { font-color: 'red';}
-            @keyframes noise {
-              0% {
-                transform: translate(0,0);
-              }
-              10% {
-                transform: translate(-5%, -5%);
-              }
-              20% {
-                transform: translate(-5%, -10%);
-              }
-              30% {
-                transform: translate(5%, 5%);
-              }
-              40% {
-                transform: translate(-5%, 10%);
-              }
-              50% {
-                transform: translate(5%, -5%);
-              }
-              60% {
-                transform: translate(-10%, 5%);
-              }
-              70% {
-                transform: translate(10%, 10%);
-              }
-              80% {
-                transform: translate(-10%, -10%);
-              }
-              90% {
-                transform: translate(10%, -5%);
-              }
-              100% {
-                transform: translate(-5%, 5%);
-            }
-              `}
+    #noise {
+      background-image: url(/smoke.webp?url);
+      animation: noise 0.3s infinite;
+      pointer-events: none;
+    }
+    h1 { font-color: 'red';}
+    @keyframes noise {
+      0% {
+        transform: translate(0,0);
+      }
+      10% {
+        transform: translate(-5%, -5%);
+      }
+      20% {
+        transform: translate(-5%, -10%);
+      }
+      30% {
+        transform: translate(5%, 5%);
+      }
+      40% {
+        transform: translate(-5%, 10%);
+      }
+      50% {
+        transform: translate(5%, -5%);
+      }
+      60% {
+        transform: translate(-10%, 5%);
+      }
+      70% {
+        transform: translate(10%, 10%);
+      }
+      80% {
+        transform: translate(-10%, -10%);
+      }
+      90% {
+        transform: translate(10%, -5%);
+      }
+      100% {
+        transform: translate(-5%, 5%);
+      }
+    }
+  `}
       </style>
     </div>
   )

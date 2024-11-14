@@ -63,5 +63,15 @@ export const projects = [
     alt: 'Captura de Fragmentz',
     src: 'https://i.imgur.com/JWv7fbU.jpeg',
     disponible: true
+  },
+  {
+    title: 'Nahuelp2p',
+    description:
+      'Landing page servicio cambio de monedas. Utilicé React, Figma, TailwindCSS y NodeJS.',
+    url: 'https://nahuelp2p.com/',
+    github: 'https://github.com/Benshi7/nahuelp2p',
+    alt: 'Captura de Nahuelp2p',
+    src: 'https://i.imgur.com/NmCZHLA.png',
+    disponible: true
   }
 ]
