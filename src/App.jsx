@@ -14,7 +14,7 @@ function App () {
   const [fontLoaded, setFontLoaded] = useState(false)
 
   useEffect(() => {
-    document.fonts.load('1rem "NombreDeLaFuente"').then(() => {
+    document.fonts.load('1rem "Metropolis"').then(() => {
       setFontLoaded(true)
     })
   }, [])
