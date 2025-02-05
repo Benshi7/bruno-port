@@ -67,11 +67,21 @@ export const projects = [
   {
     title: 'Nahuelp2p',
     description:
-      'Landing page servicio cambio de monedas. Utilicé React, Figma, TailwindCSS y NodeJS.',
+      'Landing page servicio cambio de monedas. Utilicé React, Figma, TailwindCSS, serverless dinámico.',
     url: 'https://nahuelp2p.com/',
     github: 'https://github.com/Benshi7/nahuelp2p',
     alt: 'Captura de Nahuelp2p',
     src: 'https://i.imgur.com/NmCZHLA.png',
+    disponible: true
+  },
+  {
+    title: 'NDLESS GARMENTS (wip 🚀)',
+    description:
+      'Ecommerce basado en MedusaJS (NextJS). Home Windows-XP styled, diseño a medida. Stripe payment.',
+    url: '',
+    github: 'https://github.com/Benshi7/ndless-demo',
+    alt: 'Captura de NDLESS GARMENTS',
+    src: 'https://i.imgur.com/vClGHHy.jpeg',
     disponible: true
   }
 ]
