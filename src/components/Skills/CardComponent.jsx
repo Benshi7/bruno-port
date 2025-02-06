@@ -86,7 +86,11 @@ const CardComponent = ({
           radius='lg'
           className='border-none ml-auto w-[40rem] xl:w-[35rem] lg:w-[30rem] md:w-[25rem] sm:w-[20rem]'
         >
-          <Image alt={alt} src={src} className='object-cover' />
+          <Image
+            alt={alt}
+            src={src}
+            className='object-cover 2xl:max-w-[22rem] max-w-full'
+          />
           <CardFooter
             className={`${
               disponible ? 'justify-between' : 'justify-center'

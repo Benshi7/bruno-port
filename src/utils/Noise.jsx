@@ -11,7 +11,7 @@ const Noise = () => {
       <style>
         {`
     #noise {
-      background-image: url(/smoke.webp?url);
+      background-image: url(/smoke.webp); 
       animation: noise 0.3s infinite;
       pointer-events: none;
     }
