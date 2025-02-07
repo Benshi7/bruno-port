@@ -21,7 +21,7 @@ const ModalCV = ({ isOpen, onClose }) => {
           backgroundColor: '#f7fafc',
           padding: '6px',
           zIndex: '9999',
-          // Add media queries for responsiveness
+          // Hago responsive el modal
           '@media (min-width: 600px)': {
             maxWidth: '100%',
             maxHeight: '65%'

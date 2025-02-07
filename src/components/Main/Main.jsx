@@ -21,7 +21,7 @@ function Main () {
           className='absolute pt-[30rem] md:pt-[20rem] inset-0 bg-cover bg-center animate-fade-in aspect-auto'
           style={{
             backgroundImage: 'url(/hands2.webp)',
-            mixBlendMode: 'lighten' // Establece la capa de fusión aclarar
+            mixBlendMode: 'lighten' 
           }}
         />
         <main className='flex flex-col xl:px-80 px-16 py-10 max-md:px-5 md:py-2 sm:px-20'>
