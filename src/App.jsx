@@ -7,7 +7,6 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import '@fontsource-variable/nunito'
 import '@fontsource/ubuntu'
 import '../fonts.js'
-import './utils/grained.js'
 import Noise from './utils/Noise.jsx'
 
 function App () {

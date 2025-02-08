@@ -75,6 +75,16 @@ export const projects = [
     disponible: true
   },
   {
+    title: 'Zenith Flow',
+    description:
+      'Landing page empresa tech. Utilicé React, TailwindCSS, Framer Motion, Shadcn.',
+    url: 'https://zenithflow.cloud',
+    github: 'https://github.com/Benshi7/zenith-flow',
+    alt: 'Captura de Zenithflow',
+    src: 'https://i.imgur.com/40AMYT6.png',
+    disponible: true
+  },
+  {
     title: 'Ndless (wip 🚀)',
     description:
       'Ecommerce MedusaJS, Next, Stripe. Home Windows-XP styled, diseño a medida.',
