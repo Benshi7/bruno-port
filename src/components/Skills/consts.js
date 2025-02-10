@@ -65,6 +65,16 @@ export const projects = [
     disponible: true
   },
   {
+    title: 'Dengue Dataset',
+    description:
+      'Página de visualización de Dataset de Dengue. Nodejs, React, Recharts.',
+    url: '',
+    github: 'https://github.com/Benshi7/dengue-webapp',
+    alt: 'Captura de Dengue',
+    src: 'https://i.imgur.com/L75gALU.png',
+    disponible: false
+  },
+  {
     title: 'Nahuelp2p',
     description:
       'Landing page de cambio de monedas. Utilicé React, Figma, TailwindCSS, serverless.',
